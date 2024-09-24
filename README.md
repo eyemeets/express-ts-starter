@@ -113,7 +113,7 @@ This project is already set up for deployment using [Vercel](https://vercel.com)
 
 Login to Vercel first
   ```bash
-  v:login
+  pnpm v:login
   ```
 
 To run the project locally with Vercel for development:
