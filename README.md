@@ -22,7 +22,7 @@
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/express-ts-starter.git
+   git clone https://github.com/eyemeets/express-ts-starter.git
    cd express-ts-starter
    ```
 
