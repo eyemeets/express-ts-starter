@@ -7,14 +7,17 @@
   "ts-node": {
     "transpileOnly": true,
     "compilerOptions": {
-    "module": "ESNext"
+      "module": "ESNext"
     }
   },
   "scripts": {
-    "dev": "nodemon --watch src --exec ts-node --esm src/app.ts",
+    "dev": "nodemon --watch src --exec ts-node --esm src/index.ts",
     "build": "tsc",
-    "start": "node dist/app.js",
+    "start": "node dist/index.js",
     "test": "NODE_OPTIONS=\"--loader ts-node/esm --no-warnings\" vitest run --watch --passWithNoTests",
+    "dev:ship": "vercel dev",
+    "ship": "pnpm build && vercel --prod",
+    "v:login": "vercel login",
     "setup:eslint": "npx eslint --init"
   },
   "keywords": [],
@@ -45,6 +48,7 @@
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.6.0",
+    "vercel": "^37.5.4",
     "vitest": "^2.1.1",
     "yml": "^1.0.0"
   }

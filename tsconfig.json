@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "outDir": "./dist",      // Compiled files go into dist
+    "rootDir": "./src",      // Ensure source files come from src
     "baseUrl": ".",
     "module": "ESNext",
     "target": "ESNext",
@@ -20,10 +22,8 @@
     "paths": {
       "~/*": ["src/*"]
     },
-    "typeRoots": ["./index.d.ts", "./node_modules/@types"],
-    "rootDir": "./src",
-    "outDir": "./dist",
+    "typeRoots": ["./index.d.ts", "./node_modules/@types"]
   },
   "include": ["src/**/*"],
-  "exclude": []
+  "exclude": ["node_modules", "tests"]
 }

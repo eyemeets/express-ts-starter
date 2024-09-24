@@ -8,6 +8,7 @@
 - **ESLint**: Lint your TypeScript code using preconfigured ESLint settings.
 - **Hot Reloading**: Utilizes `nodemon` and `ts-node` for automatic server restarts during development.
 - **Vitest**: Unit testing framework with fast execution and TypeScript support.
+- **Vercel Integration**: Ready for quick and easy deployment using Vercel.
 - **ISC License**: The project is licensed under ISC, making it highly permissive.
 
 ## Getting Started
@@ -100,3 +101,28 @@ Here’s an example of a basic test for the `GET /` route:
     })
   })
   ```
+
+## Deploying to Vercel
+
+This project is already set up for deployment using [Vercel](https://vercel.com). The application has been deployed and is live at:
+
+- [Main deployment link](https://express-ts-starter-ofgdyc0zf-daniel-hendricks-projects.vercel.app/)
+- [Dynamic route example](https://express-ts-starter-ofgdyc0zf-daniel-hendricks-projects.vercel.app/dynamic/insert-any-id)
+
+### Vercel Commands
+
+Login to Vercel first
+  ```bash
+  v:login
+  ```
+
+To run the project locally with Vercel for development:
+
+  ```bash
+  pnpm dev:ship
+  ```
+
+To deploy the project to production:
+```bash
+pnpm ship
+```
